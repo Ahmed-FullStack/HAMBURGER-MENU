@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Beta</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;600;700;800;900&family=YouTube+Sans:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Google+Sans+Display:wght@300;400;500;600;700;800;900&family=Google+Sans+Mono:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="./paperRipple/paper-ripple.css" />
+
+		<script src="./nav-button.js" type="module"></script>
+		<script src="./formatted-text.js" type="module"></script>
+		<script src="./index.js" type="module"></script>
+	</head>
+	<body>
+		<div class="header-wrapper">
+			<header class="primary-header">
+				<nav-button class="ripple brand" href="#home">
+					<slot slot="default">
+								Ahmed
+					</slot>
+				</nav-button>
+				<div class="ham-setup">
+					<button class="ham-btn">hamburgermenu</button>
+					<div class="backdrop"></div>
+				</div>
+				<nav class="primary-nav">
+					<ul class="nav-ul">
+						<li class="nav-li">
+							<nav-button class="ripple"  href="#home">
+								Homeehhh
+							</nav-button>
+						</li>
+						<li class="nav-li">
+							<nav-button class="ripple" href="#about">About</nav-button>
+						</li>
+						<li class="nav-li">
+							<nav-button class="ripple" href="#contact">Contact</nav-button>
+						</li>
+						<li class="nav-li">
+							<nav-button class="ripple" href="#get-in-touch">Get In Touch</nav-button>
+						</li>
+						<li class="nav-li">
+							<nav-button class="ripple" href="#accordion">Accordion</nav-button>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<main>
+			<div class="height"></div>
+			<button>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, iure!</button>
+			<!-- <div class="img-container" loading="lazy">
+				<img src="./cat.jpg" alt="">
+			</div> -->
+			<section class="wrapper" id="home">
+				<h2>Home</h2>
+				<div class="grid">
+					<div class="grid-item">
+						<h3>Web Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Andriod Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>IOS Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Web Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Andriod Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>IOS Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+			</section>
+			<section class="wrapper" id="about">
+				<h2>About</h2>
+				<div class="grid">
+					<div class="grid-item">
+						<h3>Web Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Andriod Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>IOS Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Web Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Andriod Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>IOS Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+			</section>
+			<section class="wrapper" id="contact">
+				<h2>Contact</h2>
+				<div class="grid">
+					<div class="grid-item">
+						<h3>Web Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Andriod Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>IOS Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Web Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Andriod Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>IOS Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+			</section>
+			<section class="wrapper" id="get-in-touch">
+				<h2>Contact</h2>
+				<div class="grid">
+					<div class="grid-item">
+						<h3>Web Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Andriod Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>IOS Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Web Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Andriod Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>IOS Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+			</section>
+			<section class="wrapper" id="accordion">
+				<h2>Accordion</h2>
+				<div class="grid">
+					<div class="grid-item">
+						<h3>Web Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Andriod Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>IOS Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Web Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>Andriod Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+					<div class="grid-item">
+						<h3>IOS Developer</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+							sequi expedita recusandae magnam, commodi officiis culpa illum ut
+							id nemo dolores atque! Illo temporibus, dicta sequi libero vitae
+							harum beatae!
+						</p>
+					</div>
+			</section>
+
+	
+		</main>
+	</body>
+</html>

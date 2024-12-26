@@ -1,0 +1,215 @@
+*,
+*::before,
+*::after {
+	user-select: none;
+	box-sizing: border-box;
+	font-family: 'Google Sans', system-ui, -apple-system, BlinkMacSystemFont,
+		'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+		sans-serif;
+	scroll-behavior: smooth;
+}
+:root {
+	--scroll-padding-top: 30;
+	--max-z-index: 15;
+
+	--header-z-index: calc(var(--max-z-index) - 1);
+}
+:root {
+	--body-clr: #fff;
+	--body-bg: hsl(0 0% 2%);
+	--header-bg: hsl(0 0% 3.5%);
+	--header-clr: var(--body-clr);
+	--nav-button-bg: hsl(0 0% 9%);
+	--nav-button-bg-hover: hsl(0 0% 13%);
+	--nav-button-bg-active: var(--nav-button-bg);
+	--nav-button-active-clr: hsl(4 0% 85%);
+}
+.img-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+img {
+	position: fixed;
+	top: 20%;
+	object-fit: cover;
+	width: 300px;
+	max-width: 100%;
+	z-index: 13;
+	border-radius: 1.8rem;
+	transition: height 350ms cubic-bezier(0.25, 0.8, 0.25, 1),
+		width 350ms cubic-bezier(0.25, 0.8, 0.25, 1),
+		inset 350ms cubic-bezier(0.25, 0.8, 0.25, 1),
+		border-radius 350ms cubic-bezier(0.25, 0.8, 0.25, 1) 350ms;
+}
+img:hover {
+	top: 0;
+	border-radius: 0;
+	width: 100dvw;
+	height: 100vh;
+}
+.height {
+	height: 8px;
+	width: 2rem;
+	background-color: blue;
+	transition: height 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.height:hover {
+	height: 50px;
+}
+body,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	outline: none;
+	border: none;
+	padding: 0.5rem 0.8rem;
+	background-color: hsl(0 0% 10%);
+	color: inherit;
+	border-radius: 12rem;
+}
+button:hover {
+	background-color: hsl(0 0% 20%);
+}
+button:active {
+	/* background-color: hsl(0 0% 30%); */
+}
+body {
+	margin: 0;
+	background-color: var(--body-bg);
+	color: var(--body-clr);
+}
+main {
+	--main-pt: calc(var(--header-height, 5rem) * 1px);
+	padding-top: calc(var(--main-pt) + 1rem);
+}
+.header-wrapper {
+	position: fixed;
+	inset: 0 0 auto;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background: var(--header-bg);
+	color: #fff;
+	z-index: var(--header-z-index);
+}
+.primary-header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: min(1200px, 90%);
+	margin: 0 auto;
+	padding: 1rem 0;
+}
+.brand {
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	transition: background-color 150ms ease-out;
+}
+
+.brand:hover {
+	background: hsl(0 0% 100% / 0.1);
+}
+.nav-ul {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+	gap: 2rem;
+}
+.wrapper {
+	width: min(150rem, 90%);
+	margin: 0 auto;
+}
+.wrapper > h2 {
+	font-size: 1.5rem;
+}
+.grid-item > h3 {
+	font-size: 1.2rem;
+}
+.nav-button-target {
+	position: relative;
+	z-index: 1;
+}
+.nav-button-target::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	margin: 0;
+	border-radius: 1rem;
+	outline: 2px solid hsl(0 0% 100% / 0.4);
+	outline-offset: 0.5rem;
+	z-index: -1;
+}
+::-webkit-scrollbar {
+	width: 0.6rem;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #fff;
+	border: 3px solid var(--body-bg);
+}
+::-webkit-scrollbar-track {
+	background-color: var(--body-bg);
+}
+nav-button > .mdc-ripple {
+	border-radius: 22vh;
+}
+.ham-btn {
+	display: none;
+}
+.overflow-hidden {
+	overflow: hidden;
+}
+@media (max-width: 600px) {
+	.primary-nav {
+		position: relative;
+	}
+	.nav-ul {
+		--transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: hsl(0 0% 2%);
+		height: 100vh;
+		width: min(550px, 80vw);
+		z-index: 5;
+		transition: transform 450ms var(--transition-timing-function);
+	}
+	.overflow-hidden .backdrop {
+		position: fixed;
+		inset: 0;
+		backdrop-filter: blur(2rem);
+		z-index: 4;
+	}
+	.nav-ul[menu-closed] {
+		transform: translate(100%, 0%);
+	}
+	.nav-ul[menu-closed] > * {
+		display: none;
+	}
+	.ham-btn {
+		display: block;
+		position: absolute;
+		inset: auto 0 0 auto;
+		transform: translate(0%, -50%);
+		z-index: 6;
+	}
+
+	.ham-setup {
+	}
+}
+::-webkit-scrollbar {
+	width: 0%;
+}
